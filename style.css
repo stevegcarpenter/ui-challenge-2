@@ -7,13 +7,21 @@
 }
 
 body {
-  font-family: helvetica, sans-serif;
+  font-family: sans-serif;
   color: #4a4a4a;
 }
 
 main {
   width: 87%;
   margin: auto;
+}
+
+h1.challenge-name {
   text-align: center;
-  background-color: bisque;
+  text-decoration: underline;
+  margin: 1em 0 1em 0;
+}
+
+h1 {
+  font-size: 1.7rem;
 }

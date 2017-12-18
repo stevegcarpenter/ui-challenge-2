@@ -4,18 +4,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI Challenge 2</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
   <main>
-    <h1 class="challenge-name">UI Challenge - Custom Form Elements</h1>
+    <div class"textbox-container">
+      <div class="textbox">
+        <h1 class="challenge-name underline">UI Challenge - Custom Form Elements</h1>
+      </div>
+    </div>
     <form novalidate class="form">
       <div class="form-section">
         <label><h1>text input</h1></label>
-        <input class="input-wo-validation" type="text">
+        <input class="text-input input-wo-validation" type="text">
       </div>
       <div class="form-section">
         <label><h1>text input w/ validation error</h1></label>
-        <input class="input-w-validation-error" type="text">
+        <input class="text-input input-w-validation-error" pattern="[a-zA-Z0-9_-]*" type="text">
       </div>
       <div class="form-section">
         <h1>drop down 1</h1>
@@ -31,6 +36,7 @@
       </div>
       <div class="form-section">
         <h1>buttons</h1>
+        <button></button>
       </div>
     </form>
   </main>

@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #4a4a4a;
 }
 
@@ -16,12 +16,36 @@ main {
   margin: auto;
 }
 
-h1.challenge-name {
-  text-align: center;
-  text-decoration: underline;
-  margin: 1em 0 1em 0;
-}
-
 h1 {
   font-size: 1.7rem;
+}
+
+.textbox-container {
+  text-align: center;
+}
+
+.textbox {
+  display: inline-block;
+  width: 528px;
+  margin-left: calc(calc(100% - 528px) / 2);
+}
+
+h1.challenge-name {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.90;
+  text-shadow:
+    2px 2px white,
+    2px -2px white,
+    -2px 2px white,
+    -2px -2px white;
+}
+
+.form-section {
+  margin: 1em 0 1em 0;
 }

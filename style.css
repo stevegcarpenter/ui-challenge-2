@@ -21,6 +21,10 @@ h1 {
   font-size: 1.7rem;
 }
 
+h4 {
+  font-size: 1.7rem;
+}
+
 /* related to title */
 .titlebox-container {
   text-align: center;
@@ -91,10 +95,12 @@ input[class="input-w-validation"]:invalid ~ .error-message {
   text-align: right;
 }
 
+/* checkbox */
 input[type="checkbox"] {
   display: none;
 }
 
+/* checkbox unchecked */
 input[type=checkbox] + label {
   display: inline-block;
   background:url("./img/cbox-unchecked.png") no-repeat;
@@ -104,11 +110,63 @@ input[type=checkbox] + label {
   background-size: 75%;
 }
 
+/* checkbox checked */
 input[type=checkbox]:checked + label {
+  display:inline-block;
   background:url("./img/cbox-checked.png") no-repeat;
   margin-top: 16px;
   height: 85px;
   width: 85px;
   background-size: 75%;
+}
+
+/* radio */
+input[type=radio] {
+  display: none;
+}
+
+/* radio unchecked */
+input[type=radio] + label {
+  display: inline-block;
+  background:url("./img/radio.png") no-repeat;
+  margin-top: 16px;
+  height: 85px;
+  width: 85px;
+  background-size: 75%;
+}
+
+/* radio checked */
+input[type=radio]:checked + label {
   display:inline-block;
+  background:url("./img/radio-sel.png") no-repeat;
+  margin-top: 16px;
+  height: 85px;
+  width: 85px;
+  background-size: 75%;
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  width: auto;
+  margin-top: 16px;
+  border: none;
+  padding: 15px 37px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button[class="col-1-btn"],
+button[class="col-2-btn"]:hover {
+  background-color: #999999;
+  color: #4a4a4a;
+}
+
+button[class="col-1-btn"]:hover,
+button[class="col-2-btn"] {
+  background-color: #4a4a4a;
+  color: white;
 }

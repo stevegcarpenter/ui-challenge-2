@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Challenge 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <!-- Title -->
+    <div class"titlebox-container">
+      <div class="titlebox">
+        <h1 class="challenge-name underline">UI Challenge - Custom Form Elements</h1>
+      </div>
+    </div>
+    <form novalidate class="form">
+      <!-- No validation text box -->
+      <div class="form-section">
+        <label><h4>text input</h4></label>
+        <input class="input-wo-validation" placeholder="placeholder text" type="text">
+      </div>
+      <!-- Validation text box -->
+      <div class="form-section">
+        <label><h4>text input w/ validation error</h4></label>
+        <input class="input-w-validation" placeholder="placeholder text" pattern="[a-zA-Z0-9_-]*" type="text">
+        <div class="error-message">
+          <p>please enter a valid username</p>
+        </div>
+      </div>
+      <!-- Check boxes -->
+      <div class="form-section">
+        <h4>checkboxes</h4>
+        <input type="checkbox" id="cbox-left" checked="unchecked">
+        <label for="cbox-left"></label>
+        <input type="checkbox" id="cbox-right" checked="unchecked">
+        <label for="cbox-right"></label>
+      </div>
+      <!-- Radio buttons -->
+      <div class="form-section">
+        <h4>radio</h4>
+        <input type="radio" name="emotion" id="radio-left" checked="unchecked">
+        <label for="radio-left"></label>
+        <input type="radio" name="emotion" id="radio-right" checked="checked">
+        <label for="radio-right"></label>
+      </div>
+      <!-- Submit buttons -->
+      <div class="form-section">
+        <h4>buttons</h4>
+        <button type="button" class="col-1-btn"><h4>submit</h4></button>
+        <button type="button" class="col-2-btn"><h4>submit</h4></button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

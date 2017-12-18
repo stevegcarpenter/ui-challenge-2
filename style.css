@@ -16,25 +16,30 @@ main {
   margin: auto;
 }
 
+/* all h1s in page */
 h1 {
   font-size: 1.7rem;
 }
 
+/* related to title */
 .titlebox-container {
   text-align: center;
 }
 
+/* related to title */
 .titlebox {
   display: inline-block;
   width: 528px;
   margin-left: calc(calc(100% - 528px) / 2);
 }
 
+/* related to title */
 h1.challenge-name {
   margin: 1em 0;
   text-align: center;
 }
 
+/* related to title */
 .underline {
   border-bottom: 2px solid currentColor;
   display: inline-block;
@@ -46,6 +51,44 @@ h1.challenge-name {
     -2px -2px white;
 }
 
+/* all sections in page */
 .form-section {
-  margin: 1em 0 1em 0;
+  margin: 3em 0;
+}
+
+/* both text input fields */
+input[type=text] {
+  /* why i had to set this to 96% i do not know. */
+  width: 96%;
+  padding: 13px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 29px;
+  box-sizing: content-box;
+}
+
+/* no validation field */
+input[class="input-wo-validation"] {
+  border: 1px solid #6b6b6b;
+}
+
+/* validation field w/ error message */
+input[class="input-w-validation"]:valid {
+  border: 1px solid #6b6b6b;
+}
+input[class="input-w-validation"]:invalid {
+  border: 1px solid #d83145;
+}
+input[class="input-w-validation"]:valid ~ .error-message {
+  visibility: hidden;
+}
+input[class="input-w-validation"]:invalid ~ .error-message {
+  visibility: visible;
+}
+
+/* error message */
+.error-message p {
+  color: #d83145;
+  text-align: right;
 }

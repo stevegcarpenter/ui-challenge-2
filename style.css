@@ -20,11 +20,11 @@ h1 {
   font-size: 1.7rem;
 }
 
-.textbox-container {
+.titlebox-container {
   text-align: center;
 }
 
-.textbox {
+.titlebox {
   display: inline-block;
   width: 528px;
   margin-left: calc(calc(100% - 528px) / 2);

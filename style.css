@@ -58,14 +58,12 @@ h1.challenge-name {
 
 /* both text input fields */
 input[type=text] {
-  /* why i had to set this to 96% i do not know. */
-  width: 96%;
   padding: 13px 20px;
-  margin: 10px 0;
+  margin: 12px 0;
   display: inline-block;
   border-radius: 2px;
   font-size: 29px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 /* no validation field */
@@ -91,4 +89,26 @@ input[class="input-w-validation"]:invalid ~ .error-message {
 .error-message p {
   color: #d83145;
   text-align: right;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  display: inline-block;
+  background:url("./img/cbox-unchecked.png") no-repeat;
+  margin-top: 16px;
+  height: 85px;
+  width: 85px;
+  background-size: 75%;
+}
+
+input[type=checkbox]:checked + label {
+  background:url("./img/cbox-checked.png") no-repeat;
+  margin-top: 16px;
+  height: 85px;
+  width: 85px;
+  background-size: 75%;
+  display:inline-block;
 }

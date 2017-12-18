@@ -8,16 +8,19 @@
 </head>
 <body>
   <main>
+    <!-- Title -->
     <div class"titlebox-container">
       <div class="titlebox">
         <h1 class="challenge-name underline">UI Challenge - Custom Form Elements</h1>
       </div>
     </div>
     <form novalidate class="form">
+      <!-- No validation text box -->
       <div class="form-section">
         <label><h1>text input</h1></label>
         <input class="input-wo-validation" placeholder="placeholder text" type="text">
       </div>
+      <!-- Validation text box -->
       <div class="form-section">
         <label><h1>text input w/ validation error</h1></label>
         <input class="input-w-validation" placeholder="placeholder text" pattern="[a-zA-Z0-9_-]*" type="text">
@@ -25,18 +28,19 @@
           <p>please enter a valid username</p>
         </div>
       </div>
-      <div class="form-section">
-        <h1>drop down 1</h1>
-      </div>
-      <div class="form-section">
-        <h1>drop down 2</h1>
-      </div>
+      <!-- Check boxes -->
       <div class="form-section">
         <h1>checkboxes</h1>
+        <input type="checkbox" id="cbox-left" checked="unchecked">
+        <label for="cbox-left"></label>
+        <input type="checkbox" id="cbox-right" checked="unchecked">
+        <label for="cbox-right"></label>
       </div>
+      <!-- Radio buttons -->
       <div class="form-section">
-        <h1>radio buttons</h1>
+        <h1>radio</h1>
       </div>
+      <!-- Submit buttons -->
       <div class="form-section">
         <h1>buttons</h1>
         <button></button>
